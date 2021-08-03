@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  @layer utilities {
+    body {
+      @apply bg-gray-100;
+    }
+    .news-section {
+      @apply py-8;
+    }
+    .world {
+      @apply bg-green-50;
+    }
+    .economy {
+      @apply bg-red-50;
+    }
+    .technology {
+      @apply bg-yellow-50;
+    }
+    .news-container {
+      @apply flex justify-around flex-wrap;
+    }
+    .news-box {
+      @apply md:w-1/4 px-4;
+    }
+
+    .subject-title {
+      @apply text-4xl font-bold text-shadow;
+    }
+    .img-box {
+      @apply py-2;
+    }
+    .article-box {
+      @apply py-4;
+    }
+    .news-title {
+      @apply text-2xl text-blue-500 text-shadow cursor-pointer;
+    }
+    .news-title-post {
+      @apply text-4xl font-bold text-gray-700 pb-2;
+    }
+    .actions-box {
+      @apply bg-gray-700 border-b border-gray-900 flex justify-between items-center p-4;
+    }
+    .back-link {
+      @apply py-2 px-4 rounded-xl bg-white font-bold shadow hover:bg-gray-900 border border-black hover:border-white hover:text-white;
+    }
+
+    @variants responsive {
+        .text-shadow {
+          text-shadow: 1px 1px 1px #051a48;
+        }
+
+        .text-shadow-light {
+          text-shadow: 1px 1px 1px #eee;
+        }
+        .text-shadow-md {
+          text-shadow: 4px 4px 8px black;
+        }
+        .text-shadow-lg {
+          text-shadow: 15px 15px 30px black;
+        }
+        .text-shadow-none {
+          text-shadow: none;
+        }
+    }
+  }
+}
